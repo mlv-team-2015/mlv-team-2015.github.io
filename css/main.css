@@ -24,3 +24,41 @@ body{
 	text-align: center;
 }
 
+/* LVHA */
+a:link {color: #6699CC; text-decoration: none}
+a:visited {color: #6699CC }
+a:hover {color:#7A3DB8}
+header a:hover{color: #6699CC}
+aside h3 {letter-spacing:normal}
+nav {
+	margin: 0.5em auto 0.5em auto;
+	width: 900px;
+	backgroud-color: #000000;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav li{
+	float: left;
+
+}
+nav a:link, nav a:visited{
+	text-decoration: none;
+	padding-left: 25px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	display: block;
+	height: 20px;
+	width: 110px;
+	margin: 0 auto 0 auto;
+}
+nav a:hover {
+	color:#f3f1fa; 
+	border-radius: 5px;
+}
+
+#nav_current{
+	background-color: #2b2834;
+}
