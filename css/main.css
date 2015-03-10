@@ -1,0 +1,26 @@
+/** General **/
+header{
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	color: #aeaeae;
+	font-weight: 700;
+	letter-spacing: 0.6em;
+	margin: 2em 0.2em;
+	padding-left: 10px;
+	padding-right: 25px;
+	padding-top: 4px;
+	padding-bottom: 1px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+body{
+	font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+	margin: 0 auto 1em auto;
+	background-color: #000000;
+	background-image:url('../images/zwartevilt.png');
+}
+
+.center{
+	text-align: center;
+}
+
