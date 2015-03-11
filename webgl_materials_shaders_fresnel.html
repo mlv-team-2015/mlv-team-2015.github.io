@@ -61,6 +61,7 @@
 			var windowHalfY = window.innerHeight / 2;
 
 			document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+			document.addEventListener('mousedown', onDocumentMouseDown, false);
 
 			init();
 			animate();
@@ -81,7 +82,7 @@
 
 				var geometry = new THREE.SphereGeometry( 100, 32, 16 );
 
-				var path = "https://s3-us-west-2.amazonaws.com/mlv.team.2015/media/Park2/";
+				var path = "media/Park2/";
 				var format = '.jpg';
 				var urls = [
 						path + 'posx' + format, path + 'negx' + format,
@@ -101,21 +102,21 @@
 				var parameters = { fragmentShader: shader.fragmentShader, vertexShader: shader.vertexShader, uniforms: uniforms };
 				var material = new THREE.ShaderMaterial( parameters );
 
-				// for ( var i = 0; i < 500; i ++ ) {
+				for ( var i = 0; i < 500; i ++ ) {
 
-				// 	var mesh = new THREE.Mesh( geometry, material );
+					var mesh = new THREE.Mesh( geometry, material );
 
-				// 	mesh.position.x = Math.random() * 10000 - 5000;
-				// 	mesh.position.y = Math.random() * 10000 - 5000;
-				// 	mesh.position.z = Math.random() * 10000 - 5000;
+					mesh.position.x = Math.random() * 10000 - 5000;
+					mesh.position.y = Math.random() * 10000 - 5000;
+					mesh.position.z = Math.random() * 10000 - 5000;
 
-				// 	mesh.scale.x = mesh.scale.y = mesh.scale.z = Math.random() * 3 + 1;
+					mesh.scale.x = mesh.scale.y = mesh.scale.z = Math.random() * 3 + 1;
 
-				// 	scene.add( mesh );
+					scene.add( mesh );
 
-				// 	spheres.push( mesh );
+					spheres.push( mesh );
 
-				// }
+				}
 
 				scene.matrixAutoUpdate = false;
 
@@ -172,6 +173,14 @@
 
 			}
 
+			// pause the bubbles 
+			
+			var spheresOn = false;
+
+			function onDocumentMouseDown(){
+				spheresOn = !spheresOn;
+			}
+
 			//
 
 			function animate() {
@@ -193,14 +202,18 @@
 
 				cameraCube.rotation.copy( camera.rotation );
 
-				for ( var i = 0, il = spheres.length; i < il; i ++ ) {
+				if (spheresOn){
+					for ( var i = 0, il = spheres.length; i < il; i ++ ) {
 
-					var sphere = spheres[ i ];
+						var sphere = spheres[ i ];
 
-					sphere.position.x = 5000 * Math.cos( timer + i );
-					sphere.position.y = 5000 * Math.sin( timer + i * 1.1 );
+						sphere.position.x = 5000 * Math.cos( timer + i );
+						sphere.position.y = 5000 * Math.sin( timer + i * 1.1 );
 
+					}
 				}
+
+
 
 				renderer.clear();
 				renderer.render( sceneCube, cameraCube );
