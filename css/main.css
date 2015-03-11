@@ -15,10 +15,11 @@ header{
 
 body{
 	font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+	color: #505050;
 	margin: 0 auto 1em auto;
-	background-color: #000000;
-	background-image:url('../images/zwartevilt.png');
+	background-image:url('../img/zwartevilt.png');
 }
+
 
 .center{
 	text-align: center;

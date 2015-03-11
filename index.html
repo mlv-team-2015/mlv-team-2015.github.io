@@ -5,9 +5,10 @@
         <title>MLV Team 2015</title>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<script src="js/modernizr.custom.03694.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="js/libs/modernizr.custom.03694.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="js/libs/jquery.scrolly.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,13 @@
     		<li><a href="threed.html">3D</a></li>
     	</ul>
     </nav>
-    what
+
+    <section id="section0">
+        what is this
+    </section>
+
+    <div class="parallax" data-velocity="-.1"></div>
+    <div class="parallax" data-velocity="-.5" data-fit="525"></div>
 
 
 	<!-- run javascript after page has loaded -->
@@ -32,6 +39,11 @@
 
 
 	</script>
+    <script>
+        $(document).ready(function(){
+           $('.parallax').scrolly({bgParallax: true});
+        });
+    </script>
 
 </body>
 </html>
