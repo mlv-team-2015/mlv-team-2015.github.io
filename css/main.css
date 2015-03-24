@@ -79,18 +79,8 @@ nav a:hover {
 }
 
 /* Scrolly ********************************************/
-#section0>div:nth-of-type(1){
-	background: url(https://googledrive.com/host/0BxSg4jVnOyd5RURYT3ROdVZadVE) 50% 0 no-repeat fixed;
-	margin: 0;
-	height: 1200px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
 section {
-    min-height: 1000px;
+    min-height: 800px;
     position: relative;
     width: 100% !important;
     min-width: 1000px;
@@ -100,8 +90,28 @@ section {
 }
  section article{
  	position: absolute;
- 	top: 240px;
+ 	top: 140px;
  	left: 40px;
  	width: 300px;
  	z-index: 4;
  }
+
+#section0>div:nth-of-type(1){
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5RURYT3ROdVZadVE) 30% 0 no-repeat fixed;
+	margin: 0;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#section1>div:nth-of-type(1){
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5T3JlN0hHSTFSV3c) 30% 0 no-repeat fixed;
+	margin: 0;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
