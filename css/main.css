@@ -18,11 +18,25 @@ body{
 	color: #505050;
 	margin: 0 auto 1em auto;
 	background-image:url('../img/zwartevilt.png');
+	width: 90%;
 }
 
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
 .center{
 	text-align: center;
+}
+
+.section0{
+	display: inline-block;
+
 }
 
 /* LVHA */
