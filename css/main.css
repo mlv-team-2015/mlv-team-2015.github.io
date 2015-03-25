@@ -21,6 +21,12 @@ body{
 	width: 90%;
 }
 
+h1{
+	letter-spacing: 0.4em;
+}
+
+/* Formatting */
+
 .clear {
   clear: both;
   display: block;
@@ -34,10 +40,7 @@ body{
 	text-align: center;
 }
 
-.section0{
-	display: inline-block;
 
-}
 
 /* LVHA */
 a:link {color: #6699CC; text-decoration: none}
@@ -92,9 +95,89 @@ section {
  	position: absolute;
  	top: 140px;
  	left: 40px;
- 	width: 300px;
+ 	width: 350px;
  	z-index: 4;
  }
+
+section article {
+	background-color: rgba(229, 225, 219, 0.5);
+	padding-left: 10px;
+	padding-right: 8px;
+}
+
+#joubert>div:nth-of-type(1){
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5NzBsdEJDLUtRQXM) 30% 0 no-repeat fixed;
+	margin: 0;
+	height: 1200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+#carroll>div:nth-of-type(1){
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5TzhSNDJXMjJCNU0) 30% 0 no-repeat fixed;
+	margin: 0;
+	height: 1200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#carroll>div:nth-of-type(2){
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5U3BmT1J2aGFEaDQ) 50% 0 no-repeat fixed;
+	margin: 0;
+	height: 1200px;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 100%;
+
+}
+
+#carroll>div:nth-of-type(3){
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5UFQwOFREc0NHbzQ) 50% 0 no-repeat fixed;
+	margin: 0;
+	height: 1200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#carroll>div:nth-of-type(4){
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5aldONHRoOFF1NVk) 50% 0 no-repeat fixed;
+	margin: 0;
+	height: 1200px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+}
+
+#palaniuk>div:nth-of-type(1){
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5aVBVSzJ5SXFlTlk) 30% 0 no-repeat fixed;
+	margin: 0;
+	height: 1200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#butler>div:nth-of-type(1){
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5dkNzbk81dDJ0ZVk) 30% 0 no-repeat fixed;
+	margin: 0;
+	height: 1200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*.parallax-item{position:absolute;z-index:5;top:40px;left:400px;}*/
 
 #section0>div:nth-of-type(1){
 	background: url(https://googledrive.com/host/0BxSg4jVnOyd5RURYT3ROdVZadVE) 30% 0 no-repeat fixed;
