@@ -127,12 +127,10 @@ section article {
 }
 
 #carroll>div:nth-of-type(2){
-	background: url(https://googledrive.com/host/0BxSg4jVnOyd5U3BmT1J2aGFEaDQ) 50% 0 no-repeat fixed;
+	background: url(https://googledrive.com/host/0BxSg4jVnOyd5U3BmT1J2aGFEaDQ)  no-repeat fixed;
 	margin: 0;
 	height: 1200px;
 	position: absolute;
-	top: 0;
-	left: 0px;
 	width: 100%;
 
 }
