@@ -126,35 +126,6 @@ section article {
 	width: 100%;
 }
 
-#carroll>div:nth-of-type(2){
-	background: url(https://googledrive.com/host/0BxSg4jVnOyd5U3BmT1J2aGFEaDQ)  no-repeat fixed;
-	margin: 0;
-	height: 1200px;
-	position: absolute;
-	width: 100%;
-
-}
-
-#carroll>div:nth-of-type(3){
-	background: url(https://googledrive.com/host/0BxSg4jVnOyd5UFQwOFREc0NHbzQ) 50% 0 no-repeat fixed;
-	margin: 0;
-	height: 1200px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-#carroll>div:nth-of-type(4){
-	background: url(https://googledrive.com/host/0BxSg4jVnOyd5aldONHRoOFF1NVk) 50% 0 no-repeat fixed;
-	margin: 0;
-	height: 1200px;
-	position: absolute;
-	top: 0px;
-	left: 0;
-	width: 100%;
-}
-
 #palaniuk>div:nth-of-type(1){
 	background: url(https://googledrive.com/host/0BxSg4jVnOyd5aVBVSzJ5SXFlTlk) 30% 0 no-repeat fixed;
 	margin: 0;
@@ -169,28 +140,6 @@ section article {
 	background: url(https://googledrive.com/host/0BxSg4jVnOyd5dkNzbk81dDJ0ZVk) 30% 0 no-repeat fixed;
 	margin: 0;
 	height: 1200px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-/*.parallax-item{position:absolute;z-index:5;top:40px;left:400px;}*/
-
-#section0>div:nth-of-type(1){
-	background: url(https://googledrive.com/host/0BxSg4jVnOyd5RURYT3ROdVZadVE) 30% 0 no-repeat fixed;
-	margin: 0;
-	height: 800px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-#section1>div:nth-of-type(1){
-	background: url(https://googledrive.com/host/0BxSg4jVnOyd5T3JlN0hHSTFSV3c) 30% 0 no-repeat fixed;
-	margin: 0;
-	height: 800px;
 	position: absolute;
 	top: 0;
 	left: 0;
