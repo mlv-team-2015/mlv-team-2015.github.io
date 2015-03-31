@@ -38,11 +38,23 @@
         </article>
         <div class="parallax" data-velocity="-0.3"></div>
     </section>
+    <section>
+        <img src="https://googledrive.com/host/0BxSg4jVnOyd5UFQwOFREc0NHbzQ">
+
+        <p class="long_text">
+            Nulla urna non, aliquet dui vivamus phasellus nibh, congue tellus vestibulum vivamus rutrum lacus. Justo velit ullamcorper sollicitudin, ac facilisi non, egestas odio wisi praesent est. Placerat ultricies sed pulvinar nunc vel nunc, aliquam sed praesent magna aenean. Eu aliquam, risus sit etiam, tellus consectetuer tincidunt sit sit donec sem, ante sapien imperdiet at, euismod nullam vestibulum leo curabitur risus in. Sed sagittis, aliquam vitae consectetuer parturient. Eget nec urna, lobortis ut, libero vestibulum, in sed mattis ut. Nec nec mi id aenean eget, tenetur vel congue, posuere maecenas commodo, lobortis turpis, semper fames pulvinar vehicula lorem. Integer sit, curabitur vestibulum venenatis eu, ligula nam maecenas et accumsan. Amet curabitur mi quis libero, ac nec nulla egestas aliquam non felis, eget dapibus aliquam sed tellus sem sem. Et purus adipiscing qui vel in, id odio aptent amet egestas sodales. Cum sollicitudin consequat conubia, in vel.
+        </p>
+    </section>
 
     <section id="video_constr_1">
-        <video src="https://googledrive.com/host/0BxSg4jVnOyd5cDREam5wZ2stR3c" autoplay loop>
-            The HTML5 video tag isn't working.
-        </video>
+        <article class="long_text">
+            Nunc rhoncus pulvinar lectus elit velit sapien, auctor taciti enim tortor phasellus sem, nibh enim placerat dui justo, wisi id tristique arcu turpis, cursus mauris laboris facere. Mi a venenatis tempus aenean at, fusce neque aut mauris, interdum euismod. Nibh arcu diam arcu sagittis nec, vivamus arcu eleifend fermentum, phasellus volutpat non morbi nunc aenean suscipit, lacinia sit aliquam inceptos blandit. Wisi posuere mollit, officia magnis non nunc elementum varius ut, in a nunc sociis, lacinia nunc massa blandit, metus tempor. Natoque iaculis scelerisque, molestie arcu nostra.
+        </article>
+        <div class="parallax" data-velocity="0.3">
+            <video src="https://googledrive.com/host/0BxSg4jVnOyd5cEZpSlQ1aE96OW8" autoplay loop>
+                The HTML5 video tag isn't working.
+            </video>
+        </div>
     </section>
 
     <section id="carroll">
@@ -55,6 +67,13 @@
             </p>
         </article>
         <div class="parallax" data-velocity="-0.2"></div>
+    </section>
+    
+    <section id="fringilla">
+        <img src="https://googledrive.com/host/0BxSg4jVnOyd5U3BmT1J2aGFEaDQ">
+        <p class="long_text">
+            Fringilla metus justo dictum dui, dignissim nonummy. In nunc ac mus, tempor metus, ullamcorper placerat massa, pretium sed eget, curabitur malesuada nec in. Leo habitasse eu magna et, magna ante risus et pede imperdiet pellentesque, per tortor. Sed ipsum neque, a nisl tellus quisque. Ante et enim in nulla eu. Non morbi nec lacus mauris magnam vel, vestibulum neque libero egestas lacinia morbi hendrerit, facilisi pellentesque lectus mollis aliquam, condimentum dignissim at dapibus ut vehicula tristique, amet etiam duis. 
+        </p>
     </section>
 
     <section id="palaniuk">
@@ -75,6 +94,17 @@
             </p>
         </article>
         <div class="parallax" data-velocity="-0.1"></div>
+    </section>
+
+    <section id="video_constr_3">
+        <article class="long_text">
+            Lorem ipsum dolor sit amet, architecto velit, consectetuer vivamus ac mauris tempor, nibh eros sed nulla ornare mauris, mi magna odio mauris, placerat proin erat natoque nam in. Iaculis id proin, justo vitae arcu amet vestibulum voluptate, non ac in nam et. Amet iaculis nulla, proin dictumst ac malesuada varius a, metus nulla, ornare molestie ornare dui, quis amet amet montes. Ultrices justo accumsan ac vestibulum, lorem pellentesque risus. Sapien ad libero eget amet, parturient sit ut sed sed eu, urna porta, iure est duis, mauris mauris nec a phasellus fugiat vestibulum. Vulputate iaculis elit eu est at, suscipit in, amet vel est morbi iaculis, pellentesque porro. Aliquam vehicula praesent gravida pellentesque, iaculis duis eget suspendisse massa, sodales congue quam praesent sapien non velit, nec vehicula dictum sit dictum non felis. 
+        </article>
+        <div class="parallax" data-velocity="0.3">
+            <video src="https://googledrive.com/host/0BxSg4jVnOyd5Q05ZTnpwMjljdkE" autoplay loop>
+                The HTML5 video tag isn't working.
+            </video>
+        </div>        
     </section>
 
     <section id="butler">
@@ -100,6 +130,16 @@
         // SCROLLY
         $(document).ready(function(){
            $('.parallax').scrolly({bgParallax: true});
+        });
+
+        // HEADER FADE
+        var divs = $('.fade');
+        $(window).scroll(function(){
+           if($(window).scrollTop()>10){
+                 divs.animate({color:"#000000"}, 400);
+           } else {
+                 divs.animate({color:"#505050"}, 400);
+           }
         });
 
         // VIDEO RESIZE
