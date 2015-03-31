@@ -40,9 +40,10 @@
     </section>
 
     <section id="video_constr_1">
-        <video src="https://googledrive.com/host/0BxSg4jVnOyd5cDREam5wZ2stR3c" autoplay loop>
-            The HTML5 video tag isn't working.
-        </video>
+        <iframe id="ytplayer" type="text/html" width="1920" height="1080"
+  src="http://www.youtube.com/embed/gDbcOa3dEJE?autoplay=1&controls=0&loop=1&playlist=gDbcOa3dEJE&showinfo=0&disablekb=1&origin=http://mlv-team-2015.github.io"
+  frameborder="0"/>
+        <div class="parallax" data-velocity="-0.2"></div>
     </section>
 
     <section id="carroll">
@@ -97,14 +98,9 @@
 
 	<!-- run javascript after page has loaded -->
     <script>
-        // SCROLLY
         $(document).ready(function(){
            $('.parallax').scrolly({bgParallax: true});
         });
-
-        // VIDEO RESIZE
-        // -----> jquery script to resize video width & height based on section width
-
     </script>
 
 </body>

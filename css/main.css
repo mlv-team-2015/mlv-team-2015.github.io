@@ -16,7 +16,8 @@ header{
 body{
 	font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
 	color: #505050;
-	margin: 0 auto 1em auto;
+	margin: 0 auto;
+	clear: both;
 	background-image:url('../img/zwartevilt.png');
 	width: 90%;
 }
@@ -84,10 +85,12 @@ nav a:hover {
 /* Scrolly ********************************************/
 section {
     min-height: 800px;
+    max-width: 1920px;
     position: relative;
     width: 100% !important;
     min-width: 1000px;
     margin: 0;
+    margin-bottom: -5px;
     padding: 0;
     overflow: hidden;
 }
@@ -107,6 +110,7 @@ section article {
 
 #joubert>div:nth-of-type(1){
 	background: url(https://googledrive.com/host/0BxSg4jVnOyd5NzBsdEJDLUtRQXM) 30% 0 no-repeat fixed;
+	max-width: 1920px;
 	margin: 0;
 	height: 1200px;
 	position: absolute;
@@ -118,6 +122,7 @@ section article {
 
 #carroll>div:nth-of-type(1){
 	background: url(https://googledrive.com/host/0BxSg4jVnOyd5TzhSNDJXMjJCNU0) 30% 0 no-repeat fixed;
+	max-width: 1920px;
 	margin: 0;
 	height: 1200px;
 	position: absolute;
@@ -128,6 +133,7 @@ section article {
 
 #palaniuk>div:nth-of-type(1){
 	background: url(https://googledrive.com/host/0BxSg4jVnOyd5aVBVSzJ5SXFlTlk) 30% 0 no-repeat fixed;
+	max-width: 1920px;
 	margin: 0;
 	height: 1200px;
 	position: absolute;
@@ -138,6 +144,7 @@ section article {
 
 #butler>div:nth-of-type(1){
 	background: url(https://googledrive.com/host/0BxSg4jVnOyd5dkNzbk81dDJ0ZVk) 30% 0 no-repeat fixed;
+	max-width: 1920px;
 	margin: 0;
 	height: 1200px;
 	position: absolute;
