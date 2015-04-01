@@ -1,5 +1,5 @@
 // Chart title
-var h2 = d3.select("#tapings_vis")
+var h2 = d3.select("#tapings_tab")
            .append("h2")
            .text("Bok Center Tapings")
 var h3 = d3.select("#tapings_vis")
@@ -10,7 +10,8 @@ var h3 = d3.select("#tapings_vis")
 var data = d3.text("./data/all_taping_categories_clean.tsv", function(error, data){
   var tsvData = d3.tsv.parseRows(data);
   var tsvHeader = tsvData.shift();
-  var table = d3.select("#tapings_vis").append("table"),
+  // Display the data as a table
+  var table = d3.select("#tapings_tab").append("table"),
       caption = table.append("caption"),
       thead = table.append("thead"),
       tbody = table.append("tbody");
@@ -39,7 +40,87 @@ var data = d3.text("./data/all_taping_categories_clean.tsv", function(error, dat
 
 });
 
-// Ok, let's sort by type of taping
+// Formatting and placement on page
+var margin = {
+  top: 10, 
+  right: 50, 
+  bottom: 10,
+  left: 100
+}
+var width = 960 - margin.left - margin.right;
+var height = 800 - margin.bottom - margin.top;
+
+// Data and scale variables - from CSV
+var data;
+var dateFormat = d3.time.format("%m/%d/%Y"); 
+var countFormat = d3.format(",.0f");
+var x_scale = d3.time.scale().range([0, width]);
+var y_scale = d3.scale.linear().range([height, 0]);
+var xAxis = d3.svg.axis().scale(x_scale).orient("bottom").tickFormat(dateFormat);
+var yAxis = d3.svg.axis().scale(y_scale).orient("left").ticks(5);
+
+d3.csv("data/all_taping_categories_clean.csv", function(dataset){
+    var values=[];
+    dataset.forEach(function(d){
+      d.Appt_Date = dateFormat.parse(d.Appt_Date);
+      values.push(d.Appt_Date); 
+    })
+
+    data = d3.layout.histogram().bins(x_scale.ticks(20))(values);
+    
+    x_scale.domain(d3.extent(dataset, function(d){ return d.Appt_Date }));
+    y_scale.domain([0, d3.max(data, function(d){ return d.y; })]);
+    
+    console.log("dataset: ", dataset); /// print it
+
+    return createVis();  // draw it
+});
+
+createVis = function(){
+  var svg = d3.select("#tapings_hist")
+              .append("svg")
+              .attr({
+                "width": width + margin.left + margin.right,
+                "height": height + margin.top + margin.bottom,
+              })
+              .append("g")
+              .attr("transform", "translate("+margin.left+","+margin.top+")");
+
+  svg.append("g")
+     .attr({
+      "class": "x axis",
+      "transform":"translate(0, "+height+")",
+     })
+     .call(xAxis);
+
+  svg.append("g")
+     .attr("class", "y axis")
+     .call(yAxis);
+
+var bar = svg.selectAll(".bar")
+    .data(data)
+  .enter().append("g")
+    .attr("class", "bar")
+    .attr("transform", function(d) { return "translate(" + x_scale(d.x) + "," + y_scale(d.y) + ")"; });
+
+bar.append("rect")
+    .attr("x", 1)
+    .attr("width", x_scale(data[0].dx) - 1)
+    .attr("height", function(d) { return height - y_scale(d.y); });
+
+bar.append("text")
+    .attr("dy", ".75em")
+    .attr("y", 6)
+    .attr("x", x_scale(data[0].dx) / 2)
+    .attr("text-anchor", "middle")
+    .text(function(d) { return countFormat(d.y); });
+
+}
+
+
+
+
+// Example from http://bl.ocks.org/mbostock/3886208
 var n = 3, // number of layers
     m = 58, // number of samples per layer
     stack = d3.layout.stack(),

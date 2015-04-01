@@ -26,7 +26,7 @@
         .axis path,
         .axis line {
           fill: none;
-          stroke: #000;
+          stroke: #505050;
           shape-rendering: crispEdges;
         }
 
@@ -35,6 +35,16 @@
           right: 10px;
           top: 10px;
         }
+
+
+        .bar {
+          fill: steelblue;
+        }
+
+        .x.axis path {
+          display: none;
+        }
+
     </style>
 
 </head>
@@ -53,14 +63,15 @@
     	</ul>
     </nav>
     <div class="clear"></div>
-    <section id="tapings_vis">
-        <form>
-          <label><input type="radio" name="mode" value="grouped"> Grouped</label>
-          <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
-        </form>
 
+
+    <section id="tapings_hist">
     </section>
-        <section id="example_vis">
+
+    <section id="tapings_tab">
+    </section>
+
+    <section id="example_vis">
         <form>
           <label><input type="radio" name="mode" value="grouped"> Grouped</label>
           <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
