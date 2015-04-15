@@ -51,29 +51,26 @@ var width = 960 - margin.left - margin.right;
 var height = 500 - margin.bottom - margin.top;
 
 // Data and scale variables - from CSV
-var data;
-var dateFormat = d3.time.format("%m/%d/%Y"); 
+var data, dataset, mappedSet;
+var formatDate = d3.time.format("%m/%d/%Y"); 
 var countFormat = d3.format(",.0f");
 var x_scale = d3.scale.linear().range([0, width]);
 var y_scale = d3.scale.linear().range([height, 0]);
-var xAxis = d3.svg.axis().scale(x_scale).orient("bottom").tickFormat(dateFormat);
+var xAxis = d3.svg.axis().scale(x_scale).orient("bottom").tickFormat(formatDate);
 var yAxis = d3.svg.axis().scale(y_scale).orient("left").ticks(5);
+var nbins = 20;
 
-d3.csv("data/all_taping_categories_clean.csv", function(dataset){
-    var values=[];
-    dataset.forEach(function(d){
-      d.Appt_Date = dateFormat.parse(d.Appt_Date);
-      values.push(d.Appt_Date);  // maybe add getTime() ? 
-    })
+d3.csv("data/all_taping_categories_clean.csv", function(csv){
+    dataset = csv;
+    mappedSet = (dataset.map(function(d){ return formatDate.parse(d.Appt_Date).getTime() }));
 
     data = d3.layout.histogram()
-                    .bins(x_scale.ticks(20))  // a bin per month
-                    (values); 
+                    .bins(x_scale.ticks(nbins))  // a bin per month
+                    (mappedSet); 
     
-    x_scale.domain(d3.extent(data));
+    x_scale.domain([d3.min(mappedSet), d3.max(mappedSet)]);
     y_scale.domain([0, d3.max(data, function(d){ return d.y; })]);
     
-    console.log("values: ", values); /// print it
     console.log("data: ", data);
 
     return createVis();  // draw it
@@ -89,12 +86,12 @@ createVis = function(){
               .append("g")
               .attr("transform", "translate("+margin.left+","+margin.top+")");
 
-  svg.append("g")
-     .attr({
-      "class": "x axis",
-      "transform":"translate(0, "+height+")",
-     })
-     .call(xAxis);
+  // svg.append("g")
+  //    .attr({
+  //     "class": "x axis",
+  //     "transform":"translate(0, "+height+")",
+  //    })
+  //    .call(xAxis);
 
   svg.append("g")
      .attr("class", "y axis")
@@ -108,7 +105,7 @@ var bar = svg.selectAll(".bar")
 
 bar.append("rect")
     .attr("x", 1)
-    .attr("width", x_scale(data[0].dx) - 1)
+    .attr("width", width/nbins)
     .attr("height", function(d) { return height - y_scale(d.y); });
 
 bar.append("text")
