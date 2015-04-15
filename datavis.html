@@ -21,6 +21,7 @@
 
         text {
           font: 10px sans-serif;
+          color: #fff;
         }
 
         .axis path,
@@ -30,6 +31,10 @@
           shape-rendering: crispEdges;
         }
 
+        .axis text{
+          fill: #505050;
+        }
+
         form {
           position: absolute;
           right: 10px;
@@ -37,14 +42,26 @@
         }
 
 
-        .bar {
-          fill: steelblue;
+        .bar rect{
+          fill: #084B8A;
         }
 
-        .x.axis path {
+        .bar text {
+          fill: #fff;
+        }
+
+        .bar {
+          fill: #084B8A;;
+        }
+
+        .bar:hover {
+          stroke: #fff;
+        }
+
+/*        .x.axis path {
           display: none;
         }
-
+*/
     </style>
 
 </head>
@@ -64,8 +81,10 @@
     </nav>
     <div class="clear"></div>
 
+    <section id="tapings_bar">
+    </section>
 
-    <section id="tapings_hist">
+    <section id="tapings_histogram">
     </section>
 
     <section id="tapings_tab">
@@ -79,7 +98,12 @@
 
     </section>
 	<!-- run javascript after page has loaded -->
-	<script type="text/javascript" src="js/tapings_vis.js"></script>
+
+	<script type="text/javascript" src="js/tapings_histogram.js"></script>
+  <script type="text/javascript" src="js/tapings_bar.js"></script>
+  <!-- <script type="text/javascript" src="js/hist_example.js"></script>  -->
+  <script type="text/javascript" src="js/tapings_table.js"></script>
+  <script type="text/javascript" src="js/read_data.js"></script>
     <script type="text/javascript">
 		console.log('it works!');
 
