@@ -10,6 +10,10 @@ var monthMapped=[];
 
 d3.csv("data/all_taping_categories_clean.csv", function(csv){
   dataset = csv;
+  dataset.forEach(function(d) {
+        d.date = formatDate.parse(d.Appt_Date);
+
+    });
   //mappedSet is JUST millis for each record
   mappedSet = (dataset.map(function(d){ return formatDate.parse(d.Appt_Date).getTime() }));
 
@@ -19,12 +23,21 @@ d3.csv("data/all_taping_categories_clean.csv", function(csv){
      .rollup(function(d){ return d.length })
      .entries(dataset);
 
+  daySet.map(function(d){
+    d.key = new Date(d.key); // convert back to date format
+  })
+
+
   monthSet = d3.nest()
-     .key(function(d){ return d3.time.month(formatDate.parse(d.Appt_Date)) }) // key is date
+     .key(function(d){ return d3.time.month(d.date) }) // key is date - returned as string
+     // .key(function(d){ return d.Division })
      .rollup(function(d){ return d.length })
      .entries(dataset);
 
   monthSet.sort(sortByDateAscending);
+  monthSet.map(function(d){
+    d.key = new Date(d.key); // convert back to date format
+  })
 
   weekSet = d3.nest()
      .key(function(d){ return d3.time.week(formatDate.parse(d.Appt_Date)) })
@@ -33,9 +46,14 @@ d3.csv("data/all_taping_categories_clean.csv", function(csv){
      .entries(dataset);
 
   weekSet.sort(sortByDateAscending);
+  weekSet.map(function(d){
+    d.key = new Date(d.key); // convert back to date format
+  })
 
   createHist();
-  createBar(weekSet);
+  createBar(monthSet, "month");
+  // createBar(weekSet, "week");
+  createRadial(monthSet);
 });
 
 function sortByDateAscending(a, b) {
