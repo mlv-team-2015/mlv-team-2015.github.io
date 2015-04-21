@@ -1,4 +1,5 @@
 function createHist(){
+  var nbins=100;
 
   // A formatter for counts.
   var formatCount = d3.format(",.0f");
