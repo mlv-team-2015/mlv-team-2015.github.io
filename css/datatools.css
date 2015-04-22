@@ -15,8 +15,9 @@ section {
  	position: absolute;
  	top: 140px;
  	left: 40px;
- 	width: 350px;
+ 	width: 75%;
  	z-index: 4;
+    text-align: left;
  }
 
 section article {
@@ -41,14 +42,26 @@ h2 {
 }
 
 /* individual sections */
-#question{
-
+#presentation {
+    min-height: 200px;
 }
 
+/*#question>div:nth-of-type(1){
+    background: url(https://googledrive.com/host/0BxSg4jVnOyd5Z0VDNFJnQVhrS0E) 30% 0 no-repeat fixed;
+    max-width: 1920px;
+    margin: 0;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+*/
 /* D3 Tree ********************************************/
 
 .node {
   cursor: pointer;
+  fill: #fff;
 }
 
 .node circle {
@@ -58,7 +71,8 @@ h2 {
 }
 
 .node text {
-  font: 10px sans-serif;
+  font: 12px sans-serif;
+  color: #fff;
 }
 
 .link {
@@ -74,6 +88,3 @@ h2 {
   stroke: #aaa;
 }
 
-.node {
-  stroke: #fff;
-}

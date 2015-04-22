@@ -157,7 +157,7 @@ function createCollapseTree(div, json){
 	      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
 	  nodeUpdate.select("circle")
-	      .attr("r", 4.5)
+	      .attr("r", 8)
 	      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
 	  nodeUpdate.select("text")

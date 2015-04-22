@@ -3,24 +3,36 @@
   "parent": "null",
   "children": [
     {
-      "name": "What are the types?",
+      "name": "What is the type?",
       "parent": "  ",
       "children": [
         {
-          "name": "Nominal",
-          "parent": "What are the types?"
+          "name": "Categorical",
+          "parent": "What is the type?",
+          "children": [
+            {
+              "name":"Nominal",
+              "parent": "Categorical"
+            },
+            {
+              "name":"Ordinal",
+              "parent":"Categorical"
+            }
+          ]
         },
         {
-          "name": "Ordinal",
-          "parent": "What are the types?"
-        },
-        {
-          "name": "Interval",
-          "parent": "What are the types?"
-        },
-        {
-          "name": "Ratio",
-          "parent": "What are the types?"
+          "name": "Quantitative",
+          "parent": "What is the type?",
+          "children": [
+            {
+              "name": "Interval",
+              "parent": "Quantitative"
+            },
+            {
+              "name": "Ratio",
+              "parent": "Quantitative"
+            }
+          ]
         }
       ]
     },
