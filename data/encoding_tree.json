@@ -1,0 +1,92 @@
+{
+  "name": " ",
+  "parent": "null",
+  "children": [
+    {
+      "name": "Position",
+      "parent": "  ",
+      "children": [
+        {
+          "name": "X / Y Coordinates",
+          "parent": "Position"
+        },
+        {
+          "name": "Accurate perception",
+          "parent": "Position"
+        },
+        {
+          "name": "Best for quantitative data",
+          "parent": "Position"
+        }
+      ]
+    },
+    {
+      "name": "Size",
+      "parent": " ",
+      "children": [
+        {
+          "name": "Area of shape",
+          "parent": "Size"
+        },
+        {
+          "name": "Skewed perception",
+          "parent": "Size"
+        },
+        {
+          "name": "Best for secondary attributes",
+          "parent": "Size"
+        }
+      ]
+    },
+    {
+      "name": "Shape",
+      "parent": " ",
+      "children": [
+        {
+          "name": "Dimensions can be signifier",
+          "parent": "Shape"
+        },
+        {
+          "name": "Best for categorical data",
+          "parent": "Shape"
+        },
+        {
+          "name": "Dual-encoding",
+          "parent": "Shape"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "parent": " ",
+      "children": [
+        {
+          "name": "Scale",
+          "parent": "Color",
+          "children": [
+           {
+            "name": "Sequential",
+            "parent": "Scale"
+           },
+           {
+            "name": "Diverging",
+            "parent": "Scale"
+           },
+           {
+            "name": "Qualitative",
+            "parent": "Scale"
+           }
+          ]
+        },
+        {
+          "name": "Best for grouping",
+          "parent": "Color"
+        },
+        {
+          "name": "Dual encoding",
+          "parent": "Color"
+        }
+      ]
+    }
+  ]
+}

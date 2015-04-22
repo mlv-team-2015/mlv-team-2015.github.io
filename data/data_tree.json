@@ -1,0 +1,32 @@
+{
+  "name": " ",
+  "parent": "null",
+  "children": [
+    {
+      "name": "What are the types?",
+      "parent": "  ",
+      "children": [
+        {
+          "name": "Nominal",
+          "parent": "What are the types?"
+        },
+        {
+          "name": "Ordinal",
+          "parent": "What are the types?"
+        },
+        {
+          "name": "Interval",
+          "parent": "What are the types?"
+        },
+        {
+          "name": "Ratio",
+          "parent": "What are the types?"
+        }
+      ]
+    },
+    {
+      "name": "What are the units?",
+      "parent": " "
+    }
+  ]
+}

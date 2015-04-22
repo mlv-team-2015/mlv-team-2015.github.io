@@ -1,0 +1,79 @@
+/* Scrolly ********************************************/
+section {
+    min-height: 700px;
+    max-width: 1080px;
+    position: relative;
+    width: 100% !important;
+    min-width: 1000px;
+    margin: 0;
+    margin-bottom: -5px;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+ section article{
+ 	position: absolute;
+ 	top: 140px;
+ 	left: 40px;
+ 	width: 350px;
+ 	z-index: 4;
+ }
+
+section article {
+	background-color: rgba(229, 225, 219, 0.5);
+	padding-left: 10px;
+	padding-right: 8px;
+}
+
+.long_text{
+	font-family: "Verdana";
+	line-height: 2em;
+	position: absolute;
+ 	top: 5%;
+ 	left: 50%;
+ 	width: 40%;
+ 	z-index: 4;
+}
+
+h2 {
+    background-color: rgba(229, 225, 219, 0.5);
+    color: #fff;
+}
+
+/* individual sections */
+#question{
+
+}
+
+/* D3 Tree ********************************************/
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+
+.border {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: #aaa;
+}
+
+.node {
+  stroke: #fff;
+}

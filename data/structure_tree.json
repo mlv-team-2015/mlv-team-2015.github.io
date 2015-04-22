@@ -1,0 +1,197 @@
+{
+  "name": " ",
+  "parent": "null",
+  "children": [
+    {
+      "name": "Hierarchical",
+      "parent": "  ",
+      "children": [
+        {
+          "name": "Tree",
+          "parent": "Hierarchical"
+        },
+        {
+          "name": "Treemap",
+          "parent": "Hierarchical"
+        },
+        {
+          "name": "Dendrogram",
+          "parent": "Hierarchical"
+        },
+        {
+          "name": "Node-link diagram",
+          "parent": "Hierarchical"
+        }
+      ]
+    },
+    {
+      "name": "Relational",
+      "parent": "  ",
+      "children": [
+        {
+          "name": "Proportional",
+          "parent": "Relational",
+          "children": [
+          {
+            "name": "Pie chart",
+            "parent": "Proportional"
+          },
+          {
+            "name": "Stacked bar chart",
+            "parent": "Proportional"
+          },
+          {
+            "name": "Area chart",
+            "parent": "Proportional"
+          },
+          {
+            "name": "Over time",
+            "parent": "Proportional",
+            "children": [
+              {
+                "name": "Treemap",
+                "parent": "Over time"
+              },
+              {
+                "name": "Area chart",
+                "parent": "Over time"
+              }
+            ]
+          }
+        ]
+        },
+        {
+          "name": "Network",
+          "parent": "Relational",
+          "children": [
+          {
+            "name": "Flow",
+            "parent": "Network"
+          },
+          {
+            "name": "Sankey",
+            "parent": "Network"
+          }
+          ]
+        },
+        {
+          "name": "Distribution",
+          "parent": "Relational",
+          "children": [
+          {
+            "name": "Histogram",
+            "parent": "Distribution"
+          },
+          {
+            "name": "Density plot",
+            "parent": "Distribution"
+          },
+          {
+            "name": "Box & whisker",
+            "parent": "Distribution"
+          }
+          ]
+        },
+        {
+          "name": "Correlation",
+          "parent": "Relational",
+          "children": [
+          {
+            "name": "Scatter plot",
+            "parent": "Correlation"
+          },
+          {
+            "name": "Bubble plot",
+            "parent": "Correlation"
+          },
+          {
+            "name": "Path plot",
+            "parent": "Correlation"
+          }
+          ]
+        },
+        {
+          "name": "Difference",
+          "parent": "Relational",
+          "children": [
+          {
+            "name": "Heat map",
+            "parent": "Difference"
+          },
+          {
+            "name": "Matrix of charts",
+            "parent": "Difference"
+          },
+          {
+            "name": "Parallel plot",
+            "parent": "Difference"
+          }
+          ]
+        }
+
+      ]
+    },
+    {
+      "name": "Spatial",
+      "parent": "  ",
+      "children": [
+        {
+          "name": "Line data map",
+          "parent": "Spatial"
+        },
+        {
+          "name": "Area-distortion map",
+          "parent": "Spatial"
+        },
+        {
+          "name": "Choropleth map",
+          "parent": "Spatial"
+        },
+        {
+          "name": "Dot distribution map",
+          "parent": "Spatial"
+        }
+      ]
+    },
+    {
+      "name": "Temporal",
+      "parent": "  ",
+      "children": [
+        {
+          "name": "Timeline",
+          "parent": "Temporal"
+        },
+        {
+          "name": "Bar chart",
+          "parent": "Temporal"
+        },
+        {
+          "name": "Stream graph",
+          "parent": "Temporal"
+        },
+        {
+          "name": "Line graph",
+          "parent": "Temporal"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "parent": " ",
+      "children": [
+        {
+          "name": "Word tree",
+          "parent": "Text"
+        },
+        {
+          "name": "Phrase network",
+          "parent": "Text"
+        },
+        {
+          "name": "Wordle",
+          "parent": "Text"
+        }
+      ]
+    }
+  ]
+}
