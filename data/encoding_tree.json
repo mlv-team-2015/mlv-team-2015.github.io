@@ -1,13 +1,15 @@
 {
-  "name": " ",
+  "name": "Encoding",
   "parent": "null",
+  "image": "https://googledrive.com/host/0BxSg4jVnOyd5N1lpamhVcmJweEk",
   "children": [
     {
       "name": "Position",
-      "parent": "  ",
+      "parent": "Encoding",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5RklmZDNaTDRhc0k",
       "children": [
         {
-          "name": "X / Y Coordinates",
+          "name": "X, Y",
           "parent": "Position"
         },
         {
@@ -15,14 +17,15 @@
           "parent": "Position"
         },
         {
-          "name": "Best for quantitative data",
+          "name": "Best for quantitative",
           "parent": "Position"
         }
       ]
     },
     {
       "name": "Size",
-      "parent": " ",
+      "parent": "Encoding",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5bXN6eVBQbVVST0E",
       "children": [
         {
           "name": "Area of shape",
@@ -40,14 +43,15 @@
     },
     {
       "name": "Shape",
-      "parent": " ",
+      "parent": "Encoding",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5VzdENTRIT0h2MVU",
       "children": [
         {
-          "name": "Dimensions can be signifier",
+          "name": "Dimensionality",
           "parent": "Shape"
         },
         {
-          "name": "Best for categorical data",
+          "name": "Best for categories",
           "parent": "Shape"
         },
         {
@@ -58,7 +62,8 @@
     },
     {
       "name": "Color",
-      "parent": " ",
+      "parent": "Encoding",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5WkpBZGozbktoWGM",
       "children": [
         {
           "name": "Scale",
@@ -66,15 +71,19 @@
           "children": [
            {
             "name": "Sequential",
-            "parent": "Scale"
+            "parent": "Scale",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5UW5zQVV1NjR2S1U"
+            
            },
            {
             "name": "Diverging",
-            "parent": "Scale"
+            "parent": "Scale",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5WkgtdWM5a3h2a00"
            },
            {
             "name": "Qualitative",
-            "parent": "Scale"
+            "parent": "Scale",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5RE1iSkVlMGRkZk0"
            }
           ]
         },

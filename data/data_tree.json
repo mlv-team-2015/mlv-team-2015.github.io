@@ -1,44 +1,53 @@
 {
-  "name": " ",
+  "name": "Data attributes",
   "parent": "null",
+  "image": "https://googledrive.com/host/0BxSg4jVnOyd5M1NVUkpaLWF2R00",
   "children": [
     {
-      "name": "What is the type?",
-      "parent": "  ",
+      "name": "Data type",
+      "parent": "Data attributes",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5dmEzaGlQdVhRSXc",
       "children": [
         {
           "name": "Categorical",
           "parent": "What is the type?",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5NGp1OEdxYW9PX3c",
           "children": [
             {
               "name":"Nominal",
-              "parent": "Categorical"
+              "parent": "Categorical",
+              "image": "https://googledrive.com/host/0BxSg4jVnOyd5TldraExNeHFPamc"
             },
             {
               "name":"Ordinal",
-              "parent":"Categorical"
+              "parent":"Categorical",
+              "image": "https://googledrive.com/host/0BxSg4jVnOyd5VlowSmlOVWZmS0k"
             }
           ]
         },
         {
           "name": "Quantitative",
           "parent": "What is the type?",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5U0ROaFpneUg1Qk0",
           "children": [
             {
               "name": "Interval",
-              "parent": "Quantitative"
+              "parent": "Quantitative",
+              "image": "https://googledrive.com/host/0BxSg4jVnOyd5dHVoYmQzcmMtOG8"
             },
             {
               "name": "Ratio",
-              "parent": "Quantitative"
+              "parent": "Quantitative",
+              "image": "https://googledrive.com/host/0BxSg4jVnOyd5eUpWMEl5LU9scm8"
             }
           ]
         }
       ]
     },
     {
-      "name": "What are the units?",
-      "parent": " "
+      "name": "Measurement units",
+      "parent": "Data attributes",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5Y1BBX0NIaW03N2s"
     }
   ]
 }

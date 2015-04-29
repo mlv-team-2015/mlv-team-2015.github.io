@@ -1,130 +1,142 @@
 {
-  "name": " ",
+  "name": "Structure",
   "parent": "null",
+  "image": "https://googledrive.com/host/0BxSg4jVnOyd5ZHVjcUp6aHd2NEk",
   "children": [
     {
       "name": "Hierarchical",
-      "parent": "  ",
+      "parent": "Structure",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5aFI5a3pES2p4Wms",
       "children": [
         {
           "name": "Tree",
-          "parent": "Hierarchical"
+          "parent": "Hierarchical",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5U29ORTN6QnQ4cm8"
         },
         {
           "name": "Treemap",
-          "parent": "Hierarchical"
+          "parent": "Hierarchical",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5R0FSSUZva09VX1k"
         },
         {
           "name": "Dendrogram",
-          "parent": "Hierarchical"
+          "parent": "Hierarchical",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5QlEtVkF3MUVGcUE"
         },
         {
           "name": "Node-link diagram",
-          "parent": "Hierarchical"
+          "parent": "Hierarchical",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5ejVCaDNVSmFxNEE"
         }
       ]
     },
     {
       "name": "Relational",
-      "parent": "  ",
+      "parent": "Structure",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5amN0SkxJRGl2QW8",
       "children": [
         {
           "name": "Proportional",
           "parent": "Relational",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5cWJ5RnVVaTBHVzA",
           "children": [
           {
             "name": "Pie chart",
-            "parent": "Proportional"
-          },
-          {
-            "name": "Stacked bar chart",
-            "parent": "Proportional"
-          },
-          {
-            "name": "Area chart",
-            "parent": "Proportional"
-          },
-          {
-            "name": "Over time",
             "parent": "Proportional",
-            "children": [
-              {
-                "name": "Treemap",
-                "parent": "Over time"
-              },
-              {
-                "name": "Area chart",
-                "parent": "Over time"
-              }
-            ]
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5OWVTb0phRTJPNzg"
+          },
+          {
+            "name": "Stacked bar",
+            "parent": "Proportional",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5dGo0NTZjcVFjT0E"
+          },
+          {
+            "name": "Area",
+            "parent": "Proportional",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5N0ZLOGNuQVgyWms"
           }
-        ]
+          ]
         },
         {
           "name": "Network",
           "parent": "Relational",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5UldjUUdGOExxSUE",
           "children": [
           {
             "name": "Flow",
-            "parent": "Network"
+            "parent": "Network",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5SDVYSTUtdnNsUDg"
           },
           {
             "name": "Sankey",
-            "parent": "Network"
+            "parent": "Network",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5Tno4bFJKSHl2ZW8"
           }
           ]
         },
         {
           "name": "Distribution",
           "parent": "Relational",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5eDVkdlZ2MDBUYXM",
           "children": [
           {
             "name": "Histogram",
-            "parent": "Distribution"
+            "parent": "Distribution",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5aFY3MTBnQlVpQzg"
           },
           {
             "name": "Density plot",
-            "parent": "Distribution"
+            "parent": "Distribution",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5aUtKbnBoWGpjWkk"
           },
           {
             "name": "Box & whisker",
-            "parent": "Distribution"
+            "parent": "Distribution",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5NnFRV3B2OUg0cDg"
           }
           ]
         },
         {
           "name": "Correlation",
           "parent": "Relational",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5OUtFVkFlU0ptTWc",
           "children": [
           {
             "name": "Scatter plot",
-            "parent": "Correlation"
+            "parent": "Correlation",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5cTBPNTRaVzc1eGc"
           },
           {
             "name": "Bubble plot",
-            "parent": "Correlation"
+            "parent": "Correlation",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5bVpLQ0oxOHJ2S2s"
           },
           {
             "name": "Path plot",
-            "parent": "Correlation"
+            "parent": "Correlation",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5QVN6Y0UwZEFUb28"
           }
           ]
         },
         {
           "name": "Difference",
           "parent": "Relational",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5WE9NM3NnVC11YXM",
           "children": [
           {
             "name": "Heat map",
-            "parent": "Difference"
+            "parent": "Difference",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5NElrbUVFWmkycXM"
           },
           {
-            "name": "Matrix of charts",
-            "parent": "Difference"
+            "name": "Chart matrix",
+            "parent": "Difference",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5YjlENGJKbU5XWGs"
           },
           {
             "name": "Parallel plot",
-            "parent": "Difference"
+            "parent": "Difference",
+            "image": "https://googledrive.com/host/0BxSg4jVnOyd5X3Jmd2VqZjRVUlE"
           }
           ]
         }
@@ -133,63 +145,77 @@
     },
     {
       "name": "Spatial",
-      "parent": "  ",
+      "parent": "Structure",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5a0p5cGx3dHFtd3c",
       "children": [
         {
           "name": "Line data map",
-          "parent": "Spatial"
+          "parent": "Spatial",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5Sk9CZVVxU3ZoR1U"
         },
         {
           "name": "Area-distortion map",
-          "parent": "Spatial"
+          "parent": "Spatial",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5Y3A0U0lmVkNjNDQ"
         },
         {
           "name": "Choropleth map",
-          "parent": "Spatial"
+          "parent": "Spatial",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5M2duRkIzSmhPYk0"
         },
         {
           "name": "Dot distribution map",
-          "parent": "Spatial"
+          "parent": "Spatial",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5bW8wTWh5YldYNEE"
         }
       ]
     },
     {
       "name": "Temporal",
-      "parent": "  ",
+      "parent": "Structure",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5YWVzVGhhaWxFN3M",
       "children": [
         {
           "name": "Timeline",
-          "parent": "Temporal"
+          "parent": "Temporal",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5VW54QVRGSDZDamc"
         },
         {
           "name": "Bar chart",
-          "parent": "Temporal"
+          "parent": "Temporal",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5Szk1ajdMWjlXRVk"
         },
         {
           "name": "Stream graph",
-          "parent": "Temporal"
+          "parent": "Temporal",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5MGZ4X3c2WFJRRkk"
         },
         {
           "name": "Line graph",
-          "parent": "Temporal"
+          "parent": "Temporal",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5QlZCdXQwOVlDazg"
         }
       ]
     },
     {
-      "name": "Text",
-      "parent": " ",
+      "name": "Textual",
+      "parent": "Structure",
+      "image": "https://googledrive.com/host/0BxSg4jVnOyd5MEZuVjZRM09lSE0",
       "children": [
         {
           "name": "Word tree",
-          "parent": "Text"
+          "parent": "Textual",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5aGFMbGppYVVpanM"
         },
         {
           "name": "Phrase network",
-          "parent": "Text"
+          "parent": "Textual",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5WGFVejlkbDlLbEU"
         },
         {
           "name": "Wordle",
-          "parent": "Text"
+          "parent": "Textual",
+          "image": "https://googledrive.com/host/0BxSg4jVnOyd5bVhrcV9RclB5X1k"
         }
       ]
     }
