@@ -27,15 +27,16 @@
     	</ul>
     </nav>
     <div class="clear"></div>
+    <div id="sections">
     <section id="presentation">
-        <h3>"Most information visualizations are acts of interpretation masquerading as presentation" </h3>
+        <h3>"Most information visualizations are acts of interpretation masquerading as presentation." </h3>
         <h3>Johanna Drucker</h3>
+        <div class="parallax" data-velocity="-0.3"></div>
     </section>
 
     <section id="question">
-        
+        <h2 class="arrow_box"> What is your question? </h2>
         <article>
-            <h2> What is your question? </h2>
             <p>
                 Brainstorm about why you are investigating this topic. 
             </p>
@@ -48,28 +49,40 @@
             <P>
                 Do you have the resources to collect your own data?
             </p>
-            
+            <p>
+                What do you know about this topic, and expect to see in the data? 
+            </p>
         </article>
-        <div class="parallax" data-velocity="-0.3"></div>
     </section>
 
     <section id="data">
-        <h2>What data is available?</h2>
+        <h2 class="arrow_box">What data are available?</h2>
+<!--         <article>
+            <p>
+                Explore resources in the area of your interest. The attributes of the data will will define the of your visualization. 
+            </p>
+            <p>
+                Is the information naturally grouped into categories? 
+            </p>
+            <p>
+                Are there measured values or frequency counts?
+            </p>
+        </article> -->
         <div id="data_tree"></div>
     </section>
 
     <section id="structure">
-        <h2>How is the data organized?</h2>
+        <h2 class="arrow_box">How are the data organized?</h2>
         <div id="structure_tree"></div>
     </section>
 
     <section id="encoding">
-        <h2>How will you represent the values?</h2>
+        <h2 class="arrow_box">How will you represent the values?</h2>
         <div id="encoding_tree"></div>
     </section>
 
     <section id="message">
-        <h2>What is your message?</h2>
+        <h2 class="arrow_box">What is your message?</h2>
         <article>
             <p>
                 Design decisions should enhance the impact of your message
@@ -79,7 +92,10 @@
             </p>
             <ul>
                 <li>
-                    What scales are the axes? Are certain values that 
+                    What scales are the axes? 
+                </li>
+                <li>
+                    Are certain values that serve as natural break points?
                 </li>
                 <li>
                     How are the values grouped? What groupings are relevant?
@@ -98,7 +114,7 @@
 
     </section>
 
-
+</div>    <!-- end sections -->
 
 
 	<!-- run javascript after page has loaded -->
