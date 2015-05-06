@@ -1,6 +1,40 @@
+
+/* Arrows ********************************************/
+.arrow_box {
+  position: relative;
+  background: rgba(229, 225, 219, 0.5);
+  border: 2px solid #505050;
+  margin-bottom: 70px;
+}
+.arrow_box:after, .arrow_box:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: rgba(229, 225, 219, 0.5);
+  border-width: 60px;
+  margin-left: -60px;
+}
+.arrow_box:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: #505050;
+  border-width: 63px;
+  margin-left: -63px;
+}
+
+#data_tree{}
+
 /* Scrolly ********************************************/
 section {
-    min-height: 700px;
+    min-height: 500px;
     max-width: 1080px;
     position: relative;
     width: 100% !important;
@@ -16,7 +50,7 @@ section {
  	top: 140px;
  	left: 40px;
  	width: 75%;
- 	z-index: 4;
+
     text-align: left;
  }
 
@@ -39,15 +73,19 @@ section article {
 h2 {
     background-color: rgba(229, 225, 219, 0.5);
     color: #fff;
+    padding-left: 0.3em;
 }
 
 /* individual sections */
+
 #presentation {
     min-height: 200px;
+    margin-top: 5em;
 }
 
-/*#question>div:nth-of-type(1){
-    background: url(https://googledrive.com/host/0BxSg4jVnOyd5Z0VDNFJnQVhrS0E) 30% 0 no-repeat fixed;
+
+/*#presentation>div:nth-of-type(1){
+    background: url(https://googledrive.com/host/0BxSg4jVnOyd5Tno4bFJKSHl2ZW8) 30% 0 no-repeat fixed;
     max-width: 1920px;
     margin: 0;
     height: 800px;
@@ -55,8 +93,10 @@ h2 {
     top: 0;
     left: 0;
     width: 100%;
-}
-*/
+}*/
+
+
+
 /* D3 Tree ********************************************/
 
 .node {
