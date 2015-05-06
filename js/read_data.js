@@ -51,8 +51,8 @@ d3.csv("data/all_taping_categories_clean.csv", function(csv){
   })
 
   createHist();
-  createBar(monthSet, "month");
-  // createBar(weekSet, "week");
+  // createBar(monthSet, "month");
+  createBar(weekSet, "week");
   createRadial(monthSet);
 });
 

@@ -34,7 +34,7 @@ function createBar(data, period){
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom")
-      .tickFormat(d3.time.format("%b %Y"));
+      .tickFormat(d3.time.format("%d %b %Y"));
 
   var yAxis = d3.svg.axis()
       .scale(y)
@@ -62,7 +62,7 @@ function createBar(data, period){
         .style("text-anchor", "middle")
         .attr({
           "x": 0,
-          "y": 10,
+          "y": 30,
           "transform": chartFormat.yTransform
         });
 
